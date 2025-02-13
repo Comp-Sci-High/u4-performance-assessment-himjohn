@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Card</title>
+    <link rel="stylesheet" href="/card.css">
+</head>
+<body>
+    <% for (let i=0; i < travelPosts.length; i++) { %>
+    <div class="card">
+        <img src="<%= travelPosts[i].image %>" alt="City Image">
+        <div class="card-content">
+            <h2><%= travelPosts[i].location%></h2> 
+            <p><strong>Location:</strong> <%= travelPosts[i].location%>></p>
+            <p><strong>Language:</strong> <%= travelPosts[i].language%></p>
+            <p><strong>Population:</strong> <%= travelPosts[i].population%></p>
+            <p><strong>Landmark:</strong> <%= travelPosts[i].landmark%></p>
+            <p><strong>Destination:</strong> <%= travelPosts[i].destination%></p>
+            <p><strong>Founding:</strong> <%= travelPosts[i].founding%></p>
+            <p><strong>GDP:</strong> <%= travelPosts[i].gdp%></p>
+            <p><strong>Large Export:</strong> <%= travelPosts[i].largeExport%></p>
+            <p><strong>Continent:</strong> <%= travelPosts[i].continent%></p>
+            <p><strong>Popular Destination:</strong><%= travelPosts[i].popularDestination%></p>
+        </div>
+    </div>
+    <% } %>
+</body>
+</html>
